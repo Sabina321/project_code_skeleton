@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+##returns the last name from the name column
 def extract_last_name(name_column):
     if type(name_column)==str and ',' in name_column:
         return name_column.split(',')[0]
