@@ -6,6 +6,7 @@ def extract_last_name(name_column):
         return name_column.split(',')[0]
     return "no last name"
 
+## returns a plot which shows survival rates by pclass
 def generate_central_plot(df):
     to_plot = df.groupby("Pclass")["Survived"].agg(['mean','count'])
     f, ax = plt.subplots(figsize=(5,5))
