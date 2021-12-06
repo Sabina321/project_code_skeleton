@@ -17,7 +17,7 @@ def generate_central_plot(df):
     f, ax = plt.subplots(figsize=(5,5))
     ax.scatter(to_plot.index, to_plot["mean"], s=to_plot["count"])   
     ax.set_ylim(0,1)
-    return a
+    return ax
 
 #hi
-x 
+
