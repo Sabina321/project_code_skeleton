@@ -56,6 +56,19 @@ div.footer {
   border-color: var(--color-1);
 }
 
+@media print {
+    tr.vendorListHeading {
+        background-color: var(--color-1) !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+@media print {
+    .vendorListHeading th {
+        color:  var(--color-1) !important;
+    }
+}
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
